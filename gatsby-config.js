@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `portfolio`,
+    title: `Minako Williams`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {

@@ -1,0 +1,40 @@
+body {
+  background: url('../images/pexels-gui-basto-1249586.jpg') top right no-repeat ;
+  background-size: 1980px
+}
+
+nav {
+  color: white;
+  margin-right: 2em;
+}
+
+.navbar-brand {
+  margin: 0 2em;
+  color: white;
+}
+
+.nav-link {
+  margin-left: 1em;
+}
+
+.landing-zone {
+  color: white;
+  min-height: 400px;
+}
+
+.quote {
+  font-size: 2em;
+  text-align: center;
+  margin: 1em 2em;
+}
+
+.events-zone {
+  background-color: white;
+  min-height: 400px;
+}
+
+.about-zone {
+  background-color: darkslateblue;
+  color: white;
+  min-height: 300px;
+}
