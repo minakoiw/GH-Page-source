@@ -1,0 +1,14 @@
+.events-zone {
+  background-color: rgba(255,255,255,0.7);
+  min-height: 400px;
+  padding: 1em;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list .card {
+  margin-bottom: 0.5em;
+}

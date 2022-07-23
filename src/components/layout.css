@@ -28,13 +28,9 @@ nav {
   margin: 1em 2em;
 }
 
-.events-zone {
-  background-color: white;
-  min-height: 400px;
-}
-
 .about-zone {
   background-color: darkslateblue;
   color: white;
   min-height: 300px;
+  padding: 1em;
 }
