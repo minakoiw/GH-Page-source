@@ -1,6 +1,14 @@
 body {
-  background: url('../images/pexels-gui-basto-1249586.jpg') top right no-repeat ;
-  background-size: 1980px
+  background: black url('../images/palms-trees.jpg') center top no-repeat ;
+  background-size: 100%
+}
+
+h1 {
+  font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -19,12 +27,18 @@ nav {
 
 .landing-zone {
   color: white;
-  min-height: 400px;
+  min-height: 500px;
+}
+
+.landing-piece img {
+  object-fit: contain;
 }
 
 .quote {
-  font-size: 2em;
+  font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
   text-align: center;
+  color:rgb(211, 160, 83);
   margin: 1em 2em;
 }
 
@@ -34,3 +48,8 @@ nav {
   min-height: 300px;
   padding: 1em;
 }
+
+#about-Instagram {
+  color: white
+}
+

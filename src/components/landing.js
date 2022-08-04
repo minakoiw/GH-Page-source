@@ -4,10 +4,11 @@ import {
   Row,
   Col
 } from 'react-bootstrap'
+import LandingPiece from './landing-piece'
 import "./layout.css"
 
 const Landing = () => {
-  const data = useStaticQuery(graphql`
+  const dataMessage = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -15,13 +16,15 @@ const Landing = () => {
         }
       }
     }
-  `)
+  `);
+
   return (
     <Row className="landing-zone">
       <Col lg={{ span:8, offset: 2}}>
         <a id="landing"></a>
-        <p className="quote">&ldquo;{data.site.siteMetadata.landingMessage}&rdquo;</p>
+        <p className="quote">&ldquo;{dataMessage.site.siteMetadata.landingMessage}&rdquo;</p>
       </Col>
+      <LandingPiece className="landing-piece" />
     </Row>
   )
 }

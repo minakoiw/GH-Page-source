@@ -20,8 +20,8 @@ there’s more than just one plane in this universe</p>
     <p>I am currently attending the Pacific Northwest College of Art and currently working
 on my Bachelor’s degree in Painting. Some of my artistic inspirations are Frida Kahlo, Henri Matisse, and Robert Wyland. </p>
     <div className="text-center">
-    <InstagramIcon scale={3}/>
-
+      <h2>Connect with my work</h2>
+      <a id="about-Instagram" href="https://instagram.com/minartko"><InstagramIcon scale={3} style={{margin:"2em 0"}}/></a>
     </div>
   </Col>
 </Row>

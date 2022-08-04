@@ -10,11 +10,12 @@ import './events.css'
 
 const Events = () => {
   const data = useStaticQuery(query);
+  // const events = data.allMdx.nodes.filter((mdx) => (mdx.frontmatter.mdxType === "event" && !mdx.frontmatter.doNotPost))
   return (
     <Row className="events-zone">
       <Col lg={{ span:8, offset: 2}}>
         <a id="events">
-          <h1 className="text-center">Events</h1>
+          <h1 className="text-center">Recent Showings</h1>
         </a>
         <ul className="events-list ">
           {
@@ -42,10 +43,11 @@ const Events = () => {
 
 export const query = graphql`
   query {
-    allMdx(sort: {order: ASC, fields: frontmatter___date}) {
+    allMdx(filter: {frontmatter:{mdxType:{eq:"event"}, doNotPost: {ne:true}}}) {
       nodes {
         id
         frontmatter {
+          mdxType
           date
           title
           state

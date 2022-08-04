@@ -2,7 +2,6 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import {
   Container,
-  Row,
   Navbar,
   Nav,
 } from 'react-bootstrap';
@@ -29,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link href="#events">
-              Events
+              Recent Showings
             </Nav.Link>
             <Nav.Link href="#about">
               About
