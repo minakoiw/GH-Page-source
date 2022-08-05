@@ -1,0 +1,22 @@
+.art-list {
+  list-style: none;
+  padding: 0;
+}
+
+.art-list li {
+  margin: .5em 0;
+}
+
+.art-list .flex-container {
+  padding: 0.5em;
+  display: flex;
+  height: 250px;
+}
+
+.art-description {
+  padding: 0 1em;
+}
+
+.art-list li:nth-child(even) {
+  flex-direction: row-reverse;
+}
