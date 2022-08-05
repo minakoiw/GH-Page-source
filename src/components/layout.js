@@ -27,8 +27,8 @@ const Layout = ({ pageTitle, children }) => {
           <Navbar.Brand href="#home">{data.site.siteMetadata.title}</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Nav.Link href="#events">
-              Recent Showings
+            <Nav.Link href="#exhibitions">
+              Exhibitions
             </Nav.Link>
             <Nav.Link href="#about">
               About

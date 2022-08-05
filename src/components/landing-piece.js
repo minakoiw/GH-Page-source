@@ -31,7 +31,7 @@ const LandingPiece = () => {
   return (
     <>
       <Col sm={{span:6}} xs={{span:12}} md={{span:5, offset:1}}>
-        <GatsbyImage image={image} layout="constrained" height={400} transformOptions={{fit:"contain"}}/>
+        <GatsbyImage image={image} layout="constrained" height={400} transformOptions={{fit:"contain"}} className="framed-artwork"/>
       </Col>
       <Col sm={{span:6}} xs={{span:12}} md={{span:5}}>
         <MDXRenderer>{node.body}</MDXRenderer>

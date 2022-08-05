@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import * as dayjs from 'dayjs';
 import { 
   Row,
   Col,
@@ -14,13 +15,15 @@ const Events = () => {
   return (
     <Row className="events-zone">
       <Col lg={{ span:8, offset: 2}}>
-        <a id="events">
-          <h1 className="text-center">Recent Showings</h1>
+        <a id="exhibitions">
+          <h1 className="text-center">Exhibitions</h1>
         </a>
         <ul className="events-list ">
           {
             data.allMdx.nodes.map(node => {
-              const {title, locationName, address1, city, state, zip, date} = node.frontmatter;
+              const {title, locationName, address1, city, state, zip} = node.frontmatter;
+              const jsDate = dayjs(node.frontmatter.date);
+              const date = dayjs().format('MMMM D, YYYY');
               return (
               <li key={node.id}>
                 <Card >
