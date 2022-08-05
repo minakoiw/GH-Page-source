@@ -5,17 +5,22 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import './layout.css'
 import './art-list.css'
 
+const reverseClass = (i) => {
+  if (i % 2 === 0) return 'flex-reverse';
+  return ''
+}
+
 const ArtList = () => {
   const data = useStaticQuery(query);
   console.log('in PaintingCarousel')
   return (
     <ul className="art-list">
       {
-        data.allMdx.nodes.map(node => {
+        data.allMdx.nodes.map((node, i) => {
           const image = getImage(node.frontmatter.painting_image);
           return (
             <li key={node.id}>
-              <div className="flex-container">
+              <div className={`flex-container ${reverseClass(i)}`}>
                 <GatsbyImage image={image} className="framed-artwork"/>
                 <div className='text-white art-description'>
                   <MDXRenderer>{node.body}</MDXRenderer>

@@ -10,13 +10,14 @@
 .art-list .flex-container {
   padding: 0.5em;
   display: flex;
-  height: 250px;
+  min-height: 250px;
 }
 
 .art-description {
   padding: 0 1em;
+  vertical-align:middle;
 }
 
-.art-list li:nth-child(even) {
+.flex-reverse {
   flex-direction: row-reverse;
 }
