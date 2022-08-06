@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Minako Williams`,
     landingMessage: `I am an acrylic and oil painter who is dwelling deep into the idea of existence`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://minakoiw.github.io`
   },
   plugins: [
     "gatsby-plugin-image", 
