@@ -13,6 +13,14 @@
   min-height: 250px;
 }
 
+.art-list .art-side {
+  flex: 2;
+}
+
+.art-list .description-side {
+  flex: 3;
+}
+
 .art-description {
   padding: 0 1em;
   vertical-align:middle;
