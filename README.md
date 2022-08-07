@@ -47,8 +47,8 @@ Adding a piece of art is done by copying in a JPG or PNG into the images folder 
 
 ## Deploy to GitHub Pages
 
-    In order to build and deploy to minakoiw.github.io, simply type
-    
-    ```shell
-    npm run deploy
-    ```
+  In order to build and deploy to minakoiw.github.io, simply type
+  
+  ```shell
+  npm run deploy
+  ```
