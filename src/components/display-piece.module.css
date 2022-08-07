@@ -1,0 +1,30 @@
+
+.flex-container {
+  padding: 0.5em;
+  display: flex;
+  min-height: 250px;
+}
+
+.flex-container-reverse {
+  padding: 0.5em;
+  display: flex;
+  min-height: 250px;
+  flex-direction: row-reverse;
+}
+
+.art-side {
+  flex: 2;
+}
+
+.description-side {
+  flex: 3;
+  color: white;
+  padding: 1em;
+}
+
+.description-side-reverse {
+  flex: 3;
+  padding: 1em;
+  text-align: right;
+  color: white
+}

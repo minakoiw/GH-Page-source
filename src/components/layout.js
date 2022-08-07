@@ -24,7 +24,7 @@ const Layout = ({ pageTitle, children }) => {
       {/* <header>{data.site.siteMetadata.title}</header> */}
       <Navbar>
         <Container fluid>
-          <Navbar.Brand href="#home">{data.site.siteMetadata.title}</Navbar.Brand>
+          <Navbar.Brand href="/#home">{data.site.siteMetadata.title}</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link href="/portfolio">
@@ -43,6 +43,9 @@ const Layout = ({ pageTitle, children }) => {
         <Container fluid>
               {children}
         </Container>
+        <footer class="pt-4 my-md-5 pt-md-5 text-white text-center">
+          &copy; Copyright 2022 Minako Williams - All Rights Reserved        
+        </footer>
       </main>
     </div>
   )

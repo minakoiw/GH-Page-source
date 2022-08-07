@@ -1,0 +1,9 @@
+.art-list {
+  list-style: none;
+  padding: 0;
+}
+
+.art-list-item {
+  margin: .5em 0;
+}
+

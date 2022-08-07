@@ -1,43 +1,22 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import * as dayjs from 'dayjs';
+import DisplayPiece from './display-piece';
 import './layout.css'
-import './art-list.css'
-
-const reverseClass = (i) => {
-  if (i % 2 === 1) return 'flex-reverse';
-  return ''
-}
+import {
+  artList,
+  artListItem
+} from './art-list.module.css'
 
 const ArtList = () => {
   const data = useStaticQuery(query);
   return (
-    <ul className="art-list">
+    <ul className={artList}>
       {
-        data.allMdx.nodes.map((node, i) => {
-          const image = getImage(node.frontmatter.painting_image);
-          const { title, dimensions, date } = node.frontmatter;
-          const jsDate = dayjs(date);
-          return (
-            <li key={node.id}>
-              <div className={`flex-container ${reverseClass(i)}`}>
-                <div className="art-side">
-                  <GatsbyImage image={image} className="framed-artwork"/>
-                </div>
-                <div className='description-side'>
-                  <div className='text-white art-description'>
-                    <h2>{title}</h2>
-                    <p>{jsDate.format('MMMM D, YYYY')}</p>
-                    <p>{dimensions}</p>
-                    <MDXRenderer>{node.body}</MDXRenderer>
-                  </div>
-                </div>
-              </div>
-            </li>
-          ) 
-        })
+        data.allMdx.nodes.map((node,i) => (
+          <li className={artListItem}>
+            <DisplayPiece artNode={node} displayReverse={i % 2 === 1 ? true : false} />
+          </li>
+        ))
       } 
     </ul>  
   )
@@ -49,7 +28,6 @@ export const query = graphql`
       nodes {
         id
         frontmatter {
-          is_landing
           date
           title
           dimensions
