@@ -4,50 +4,48 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Gatsby website for Minako Williams
 </h1>
 
-## 🚀 Quick start
+## What you'll need to change this website
 
-1.  **Create a Gatsby site.**
+### Required Tools
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+This site is built in GatsbyJS, and requires the following tools installed on your computer.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+1. The [Git source management system](https://git-scm.com) is required to clone this code.
+2. The [Node runtime and NPM package management system](https://nodejs.org) is required by Gatsby.
+3. [GatsbyJS](https://www.gatsbyjs.com) is needed to compile the website.
 
-2.  **Start developing.**
+Install the tools in the order given
 
-    Navigate into your new site’s directory and start it up.
+### Build steps
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Use a command line terminal like Bash, Zsh or PowerShell and execute the following
+in a folder where you'd like to place the source code. This will copy the source code to y our computer.
 
-3.  **Open the code and start customizing!**
+```shell
+git clone https://minakoiw.GH-Page-source
+```
 
-    Your site is now running at http://localhost:8000!
+The following will download the open source libraries required by GatsbyJS. This will download a lot of stuff and take a while. Eventually it will start Gatsby in Development mode
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+```shell
+cd GH-Page-source
+npm run develop
+```
 
-4.  **Learn more**
+Now just start your browser and type into the address bar **localhost:8000**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Adding an event to the Exhibitions section
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Adding an event to the exhibition list is done by adding a file to the events folder using Markdown and Front Matter as shown in the template.mdx
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Adding a new piece of art in the portfolio
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Adding a piece of art is done by copying in a JPG or PNG into the images folder under portfolio-pieces folder. Then create a MDX file in the porfolio-pieces folder and fill in the Markdown and Front Matter using the examples already in the folder.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-5. **Deploy to GitHub Pages
+## Deploy to GitHub Pages
 
     In order to build and deploy to minakoiw.github.io, simply type
     
