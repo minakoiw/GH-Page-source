@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import * as dayjs from 'dayjs';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import {
@@ -18,6 +19,9 @@ const LandingPiece = () => {
               gatsbyImageData
             }
           }
+          title
+          date
+          dimensions
         }
         body
       }
@@ -34,6 +38,8 @@ const LandingPiece = () => {
         <GatsbyImage image={image} layout="constrained" height={400} transformOptions={{fit:"contain"}} className="framed-artwork"/>
       </Col>
       <Col sm={{span:6}} xs={{span:12}} md={{span:5}}>
+        <h2>{node.frontmatter.title}</h2>
+        <p>{dayjs(node.frontmatter.date).format('MMMM D, YYYY')}</p>
         <MDXRenderer>{node.body}</MDXRenderer>
       </Col>
     </>
