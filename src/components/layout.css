@@ -3,13 +3,10 @@ body {
   background-size: 100%
 }
 
-h1 {
+h1, h2, h3 {
   font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
 }
 
-h2 {
-  font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
-}
 
 nav {
   color: white;
@@ -28,6 +25,7 @@ nav {
 .landing-zone {
   color: white;
   min-height: 500px;
+  padding-bottom: 2em;
 }
 
 .landing-piece img {
@@ -39,7 +37,7 @@ nav {
   font-size: 2.5em;
   text-align: center;
   color:rgb(211, 160, 83);
-  margin: 1em 2em;
+  margin: 2em;
 }
 
 .about-zone {

@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link href="/portfolio">
-              My Portfolio
+              Portfolio
             </Nav.Link>
             <Nav.Link href="/#exhibitions">
               Exhibitions
@@ -44,7 +44,7 @@ const Layout = ({ pageTitle, children }) => {
               {children}
         </Container>
         <footer class="pt-4 my-md-5 pt-md-5 text-white text-center">
-          &copy; Copyright 2022 Minako Williams - All Rights Reserved        
+          &copy; Copyright 2022 - Minako Williams, all rights reserved        
         </footer>
       </main>
     </div>

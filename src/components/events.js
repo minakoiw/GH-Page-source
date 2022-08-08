@@ -1,37 +1,39 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import * as dayjs from 'dayjs';
+//import * as dayjs from 'dayjs';
 import { 
   Row,
   Col,
 } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
-import './events.css'
+import {
+  eventsZone,
+  eventsList,
+  eventsListItem
+} from './events.module.css'
 
 const Events = () => {
   const data = useStaticQuery(query);
   // const events = data.allMdx.nodes.filter((mdx) => (mdx.frontmatter.mdxType === "event" && !mdx.frontmatter.doNotPost))
   return (
-    <Row className="events-zone">
+    <Row className={eventsZone}>
       <Col lg={{ span:8, offset: 2}}>
         <a id="exhibitions">
           <h1 className="text-center">Exhibitions</h1>
         </a>
-        <ul className="events-list ">
+        <ul className={eventsList}>
           {
             data.allMdx.nodes.map(node => {
               const {title, locationName, address1, city, state, zip} = node.frontmatter;
-              const jsDate = dayjs(node.frontmatter.date);
-              const date = dayjs().format('MMMM D, YYYY');
               return (
-              <li key={node.id}>
+              <li key={node.id} className={eventsListItem}>
                 <Card >
-                  <Card.Header as="h5">{title} - {date}</Card.Header>
                   <Card.Body>
-                    {locationName}, {address1}, {city}, {state}, {zip}
+                    <h3>{title}</h3>
+                    <strong>{locationName}</strong>, {address1}, {city}, {state}, {zip}
                     <MDXRenderer>{node.body}</MDXRenderer>
-                  </Card.Body>
+                   </Card.Body>
                 </Card>
               </li>
               )
