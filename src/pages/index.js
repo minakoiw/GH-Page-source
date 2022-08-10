@@ -7,11 +7,17 @@ import "../components/layout.css"
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout>
       <Landing />
       <Events />
       <About />
     </Layout>
+  )
+}
+
+export const Head = () => {
+  return (
+    <title>Minako Williams, painter</title>
   )
 }
 

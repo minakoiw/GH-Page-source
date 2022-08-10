@@ -8,7 +8,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./layout.css";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
   query {
     site {
@@ -20,8 +20,6 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      {/* <header>{data.site.siteMetadata.title}</header> */}
       <Navbar>
         <Container fluid>
           <Navbar.Brand href="/#home">{data.site.siteMetadata.title}</Navbar.Brand>
@@ -43,12 +41,13 @@ const Layout = ({ pageTitle, children }) => {
         <Container fluid>
               {children}
         </Container>
-        <footer class="pt-4 my-md-5 pt-md-5 text-white text-center">
+        <footer className="pt-4 my-md-5 pt-md-5 text-white text-center">
           &copy; Copyright 2022 - Minako Williams, all rights reserved        
         </footer>
       </main>
     </div>
   )
 }
+
 
 export default Layout

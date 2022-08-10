@@ -5,9 +5,15 @@ import "../components/layout.css"
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="My Portfolio">
+    <Layout>
       <ArtList />
     </Layout>
+  )
+}
+
+export const Head = () => {
+  return (
+    <title>Porfolio of Minako Williams, painter</title>
   )
 }
 

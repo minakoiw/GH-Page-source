@@ -13,7 +13,7 @@ const ArtList = () => {
     <ul className={artList}>
       {
         data.allMdx.nodes.map((node,i) => (
-          <li className={artListItem}>
+          <li className={artListItem} key={node.id}>
             <DisplayPiece artNode={node} displayReverse={i % 2 === 1 ? true : false} />
           </li>
         ))
