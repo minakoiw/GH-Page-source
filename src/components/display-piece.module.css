@@ -3,27 +3,33 @@
   padding: 0.5em;
   display: flex;
   min-height: 250px;
+  justify-content: center;
 }
 
 .flex-container-reverse {
   padding: 0.5em;
   display: flex;
   min-height: 250px;
+  justify-content: center;
   flex-direction: row-reverse;
 }
 
 .art-side {
-  flex: 2;
+  min-width: 250px;
+  max-width: 600px;
+  width: 50%;
 }
 
 .description-side {
-  flex: 3;
+  min-width: 200px;
+  max-width: 500px;
   color: white;
   padding: 1em;
 }
 
 .description-side-reverse {
-  flex: 3;
+  min-width: 200px;
+  max-width: 500px;
   padding: 1em;
   text-align: right;
   color: white
