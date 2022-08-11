@@ -18,6 +18,15 @@
   min-width: 250px;
   max-width: 600px;
   width: 50%;
+  padding-top: 1em;
+  padding-bottom: 0;
+  transition: 0.3s ease;
+}
+
+.art-side:hover {
+  padding-top: 0;
+  padding-bottom: 1em;
+  transition: 0.1s ease-out;
 }
 
 .description-side {
