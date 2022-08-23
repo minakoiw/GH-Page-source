@@ -14,12 +14,12 @@ nav {
 }
 
 .navbar-brand {
-  margin: 0 2em;
+  margin: 0 .8em;
   color: white;
 }
 
 .nav-link {
-  margin-left: 1em;
+  margin-left: .8em;
 }
 
 .landing-zone {
@@ -37,7 +37,7 @@ nav {
   font-size: 2.5em;
   text-align: center;
   color:rgb(211, 160, 83);
-  margin: 2em;
+  margin: 1.5em 1em 2em 1em;
 }
 
 .about-zone {
