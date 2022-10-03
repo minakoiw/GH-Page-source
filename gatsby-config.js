@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Minako Williams`,
-    landingMessage: `I am an acrylic and oil painter who is dwelling deep into the idea of existence`,
+    landingMessage: `What infinite possibilities can me discover or manifest as real as life itself?`,
     siteUrl: `https://minakoiw.github.io`
   },
   plugins: [
@@ -50,7 +50,8 @@ module.exports = {
     resolve: 'gatsby-plugin-google-fonts',
     options: {
       fonts: [
-        'Merriweather'
+        'Merriweather',
+        'Gloria Hallelujah'
       ]
     } 
   }]

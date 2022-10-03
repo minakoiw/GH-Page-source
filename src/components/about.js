@@ -10,9 +10,7 @@ import './layout.css';
 const About = () => (
 <Row className="about-zone">
   <Col lg={{ span:8, offset: 2}}>
-    <a id="about">
-      <h1 className='text-center'>About Me</h1>
-    </a>
+    <h1 className='text-center'>About Me</h1>
     <p>Many of my paintings illuminate the idea of human existence being more than being alive and
 living on a planet. Society has conditioned us to think that existing is all about breathing air on
 this planet and contributing to your society. But by expanding your mind and understanding,

@@ -19,9 +19,7 @@ const Events = () => {
   return (
     <Row className={eventsZone}>
       <Col lg={{ span:8, offset: 2}}>
-        <a id="exhibitions">
-          <h1 className="text-center">Exhibitions</h1>
-        </a>
+        <h1 className="text-center">Exhibitions</h1>
         <ul className={eventsList}>
           {
             data.allMdx.nodes.map(node => {

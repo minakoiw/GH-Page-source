@@ -22,17 +22,23 @@ const Layout = ({ children }) => {
     <div>
       <Navbar>
         <Container fluid>
-          <Navbar.Brand href="/#home">{data.site.siteMetadata.title}</Navbar.Brand>
+          <Navbar.Brand href="/home">{data.site.siteMetadata.title}</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
+            <Nav.Link href="/about">
+              About
+            </Nav.Link>
             <Nav.Link href="/portfolio">
               Portfolio
             </Nav.Link>
-            <Nav.Link href="/#exhibitions">
+            <Nav.Link href="/cv">
+              CV
+            </Nav.Link>
+            <Nav.Link href="/exhibitions">
               Exhibitions
             </Nav.Link>
-            <Nav.Link href="/#about">
-              About
+            <Nav.Link href="/contact">
+              Contact
             </Nav.Link>
           </Navbar.Collapse>
         </Container>
@@ -41,7 +47,7 @@ const Layout = ({ children }) => {
         <Container fluid>
               {children}
         </Container>
-        <footer className="pt-4 my-md-5 pt-md-5 text-white text-center">
+        <footer className="pt-4 my-md-5 pt-md-5 text-center">
           &copy; Copyright 2022 - Minako Williams, all rights reserved        
         </footer>
       </main>
