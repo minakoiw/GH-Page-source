@@ -1,6 +1,6 @@
 body {
   font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;  
-  background: black url('../images/bold-colors.jpg') center top no-repeat;
+  background: white url('../images/bold-colors.jpg') center top no-repeat;
   background-size: 100%
 }
 
@@ -19,14 +19,14 @@ nav {
 
 .navbar-brand {
   margin: 0 .8em;
-  font-size: 3.5em;
+  font-size: calc(1vw + 1vh + 3vmin);
   padding-top: 1em;
   font-weight:700;
 }
 
 .nav-link {
   margin-left: .8em;
-  font-size: 1.6em;
+  font-size: calc(1vw + 1vh + .5vmin);
 }
 
 .landing-zone {
@@ -40,23 +40,17 @@ nav {
 
 .quote {
   font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
-  font-size: 2.5em;
-  margin-top: 8em;
+  font-size: calc(1vw + 1vh + 2vmin);
+  margin-top: 40vh;
   text-shadow: 2px 2px rgba(255, 255, 255, 0.5), -2px -2px rgba(255, 255, 255, 0.5);
-}
-
-.about-zone {
-  background-color: black;
-  color: white;
-  min-height: 300px;
-  padding: 1em;
-}
-
-#about-Instagram {
-  color: white
 }
 
 .framed-artwork {
   background-color: white;
   border: 1em solid black;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }

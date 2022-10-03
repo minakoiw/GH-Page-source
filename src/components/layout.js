@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     <div>
       <Navbar>
         <Container fluid>
-          <Navbar.Brand href="/home">{data.site.siteMetadata.title}</Navbar.Brand>
+          <Navbar.Brand href="/">{data.site.siteMetadata.title}</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link href="/about">

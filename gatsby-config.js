@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Minako Williams`,
-    landingMessage: `What infinite possibilities can me discover or manifest as real as life itself?`,
+    landingMessage: `What infinite possibilities can we discover or manifest as real as life itself?`,
     siteUrl: `https://minakoiw.github.io`
   },
   plugins: [

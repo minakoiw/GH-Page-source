@@ -6,13 +6,6 @@ import {
 } from 'react-bootstrap'
 import "./layout.css"
 
-const selfieCss = {
-  height: '85px',
-  width: '120px', 
-  margin: "0 2.5em", 
-  objectFit: 'cover'
-}
-
 const Landing = () => {
   const dataMessage = useStaticQuery(graphql`
     query {
