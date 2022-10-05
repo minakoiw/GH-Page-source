@@ -1,23 +1,12 @@
 
 .flex-container {
   padding: 0.5em;
-  display: flex;
-  min-height: 250px;
-  justify-content: center;
-}
-
-.flex-container-reverse {
-  padding: 0.5em;
-  display: flex;
-  min-height: 250px;
-  justify-content: center;
-  flex-direction: row-reverse;
+  max-width: 500px;
 }
 
 .art-side {
   min-width: 250px;
-  max-width: 600px;
-  width: 50%;
+  max-width: 450px;
   padding-top: 1em;
   padding-bottom: 0;
   transition: 0.3s ease;
@@ -30,16 +19,15 @@
 }
 
 .description-side {
-  min-width: 200px;
-  max-width: 500px;
-  color: white;
-  padding: 1em;
+  text-align: center;
 }
 
-.description-side-reverse {
-  min-width: 200px;
-  max-width: 500px;
-  padding: 1em;
-  text-align: right;
-  color: white
+.larger {
+  font-weight: 700;
+  font-size: calc(1vw + 1vh + 2vmin);
+}
+
+.smaller {
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  margin: 0.3em 0 0 0;
 }

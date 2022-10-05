@@ -29,7 +29,6 @@ export const query = graphql`
       nodes {
         id
         frontmatter {
-          is_landing
           date
           title
           painting_image {

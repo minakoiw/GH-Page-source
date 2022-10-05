@@ -1,6 +1,9 @@
 .art-list {
   list-style: none;
   padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .art-list-item {

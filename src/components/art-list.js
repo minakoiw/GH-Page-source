@@ -12,7 +12,7 @@ const ArtList = () => {
   return (
     <ul className={artList}>
       {
-        data.allMdx.nodes.map((node,i) => (
+        data.allMdx.nodes.map((node,i) =>  (
           <li className={artListItem} key={node.id}>
             <DisplayPiece artNode={node} displayReverse={i % 2 === 1 ? true : false} />
           </li>
@@ -31,6 +31,7 @@ export const query = graphql`
           date
           title
           dimensions
+          materials
           painting_image {
             childImageSharp {
               gatsbyImageData

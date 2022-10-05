@@ -6,6 +6,7 @@
   color: black;
 }
 
-#social-media {
+.social-media {
+  text-align: center;
   margin-top: 3em;
 }

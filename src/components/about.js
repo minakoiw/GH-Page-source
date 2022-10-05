@@ -29,7 +29,7 @@ there’s more than just one plane in this universe</p>
 on my Bachelor’s degree in Painting. Some of my artistic inspirations are Frida Kahlo, Henri Matisse, and Robert Wyland. </p>
   </Col>
   <Col md={{ span:10, offset: 1}}>
-    <div id={socialMedia} className="text-center">
+    <div className={socialMedia}>
       <h3>Connect with my work</h3>
       <a className={aboutInstagram} href="https://instagram.com/minartko"><InstagramIcon scale={3} style={{margin:"2em 0"}}/></a>
     </div>

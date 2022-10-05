@@ -5,7 +5,7 @@ import "../components/layout.css"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout layoutClass="portfolio">
       <ArtList />
     </Layout>
   )

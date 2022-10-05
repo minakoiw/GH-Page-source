@@ -8,7 +8,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./layout.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, layoutClass }) => {
   const data = useStaticQuery(graphql`
   query {
     site {
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   }`);
 
   return (
-    <div>
+    <div id="mainLayout" className={layoutClass}>
       <Navbar>
         <Container fluid>
           <Navbar.Brand href="/">{data.site.siteMetadata.title}</Navbar.Brand>
