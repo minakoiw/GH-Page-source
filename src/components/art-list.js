@@ -9,10 +9,11 @@ import {
 
 const ArtList = () => {
   const data = useStaticQuery(query);
+  const sortedNodes = data.allMdx.nodes.sort((nodeA, nodeB) =>(new Date(nodeB.frontmatter.date).getTime() - new Date(nodeA.frontmatter.date).getTime()))
   return (
     <ul className={artList}>
       {
-        data.allMdx.nodes.map((node,i) =>  (
+        sortedNodes.map((node,i) =>  (
           <li className={artListItem} key={node.id}>
             <DisplayPiece artNode={node} displayReverse={i % 2 === 1 ? true : false} />
           </li>
