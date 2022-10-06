@@ -5,7 +5,6 @@ import {
   flexContainer, 
   artSide,
   descriptionSide,
-  descriptionSideReverse,
   larger,
   smaller
 } from './display-piece.module.css';

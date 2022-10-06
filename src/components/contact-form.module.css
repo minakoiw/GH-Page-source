@@ -1,0 +1,17 @@
+.h2Style {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.message-area {
+  min-height: 6em;
+}
+
+.form-group-style {
+  margin-bottom: 1.5em;
+}
+
+.label-style {
+  font-weight: 700;
+}
