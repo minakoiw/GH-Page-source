@@ -1,7 +1,3 @@
-.events-zone {
-  background-color: white;
-  padding: 1em;
-}
 
 .events-list {
   list-style: none;
@@ -9,5 +5,24 @@
 }
 
 .events-list-item {
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
+  line-height: 2em;;
+}
+
+.event-title-style {
+  text-decoration: underline;
+  font-size:1.2em;
+}
+
+.location-style {
+  font-size: 1.2em;
+}
+
+.anchor-style {
+  color: black;
+}
+
+.no-margins {
+  margin: 0;
+  font-size: 1.2em;
 }

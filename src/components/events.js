@@ -6,33 +6,37 @@ import {
   Row,
   Col,
 } from 'react-bootstrap'
-import Card from 'react-bootstrap/Card'
 import {
-  eventsZone,
   eventsList,
-  eventsListItem
+  eventsListItem,
+  eventTitleStyle,
+  locationStyle,
+  anchorStyle,
+  noMargins
 } from './events.module.css'
+
+const linkMarkup = (links) => {
+  if (!links || !links.length) return null;
+  return links.map((link) => (
+    <p key={link} className={noMargins}><a className={anchorStyle} href={link}>{link}</a></p>
+  ));
+}
 
 const Events = () => {
   const data = useStaticQuery(query);
   // const events = data.allMdx.nodes.filter((mdx) => (mdx.frontmatter.mdxType === "event" && !mdx.frontmatter.doNotPost))
   return (
-    <Row className={eventsZone}>
-      <Col lg={{ span:8, offset: 2}}>
-        <h1 className="text-center">Exhibitions</h1>
+    <Row>
+      <Col lg={{ span:10, offset: 1}} md={{span:12, offset: 0}}>
         <ul className={eventsList}>
           {
             data.allMdx.nodes.map(node => {
-              const {title, locationName, address1, city, state, zip} = node.frontmatter;
+              const {title, locationName, address1, city, state, zip, links} = node.frontmatter;
               return (
               <li key={node.id} className={eventsListItem}>
-                <Card >
-                  <Card.Body>
-                    <h3>{title}</h3>
-                    <strong>{locationName}</strong>, {address1}, {city}, {state}, {zip}
-                    <MDXRenderer>{node.body}</MDXRenderer>
-                   </Card.Body>
-                </Card>
+                <h3 className={eventTitleStyle}>{title}</h3>
+                <span className={locationStyle}>{locationName}, {address1}, {city}, {state}, {zip}</span>
+                {linkMarkup(links)}
               </li>
               )
             })
@@ -59,6 +63,7 @@ export const query = graphql`
           address1
           city
           doNotPost
+          links
         }
         body
       }
