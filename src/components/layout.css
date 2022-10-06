@@ -62,8 +62,8 @@ nav {
 }
 
 .framed-artwork {
-  background-color: white;
-  border: 1em solid black;
+  width: 500px;
+  height: 500px;
 }
 
 footer {

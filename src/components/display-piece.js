@@ -18,7 +18,7 @@ const DisplayPiece = ({artNode, displayReverse}) => {
   return (
     <div className={flexContainer}>
       <div className={artSide}>
-        <GatsbyImage image={image} className="framed-artwork"/>
+        <GatsbyImage image={image} className="framed-artwork" imgStyle={{objectFit: "contain"}}/>
       </div>
       <div className={descriptionSide}>
         <div>
